@@ -1,0 +1,30 @@
+.highlight-purple {
+  color: #4B2E83;
+  font-weight: 600;
+}
+
+/* .highlight-purple {
+  color: #6e5494;
+  font-weight: 600;
+} */
+
+.highlight-blue {
+  color: #0074e0;
+  font-weight: 600;
+}
+
+.profile-img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+/* .hero-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #333;
+} */
