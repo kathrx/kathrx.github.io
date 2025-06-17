@@ -1,63 +1,35 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <style>
-    .swiper-container {
-      margin-top: 50px;
-      width: 80%;   /* Optional: limit width for nicer layout */
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 10px; /* Optional: rounded corners */
-    }
-  </style>
-</head>
-<body>
-  <div class="swiper-container my-swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="https://placekitten.com/300/200" alt="Slide 1" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://placekitten.com/301/200" alt="Slide 2" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://placekitten.com/302/200" alt="Slide 3" />
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
+---
+layout: default
+title: Home
+---
 
-  <script>
-    new Swiper('.my-swiper', {
-      loop: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      spaceBetween: 30,
-      pagination: { el: '.swiper-pagination', clickable: true },
-      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-      effect: 'coverflow',
-      coverflowEffect: {
-        rotate: 0,
-        stretch: -30,
-        depth: 200,
-        modifier: 2.5,
-        slideShadows: false,
-      },
-      breakpoints: {
-        640: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      },
-    });
-  </script>
-</body>
-</html>
+<section class="container py-5">
+  <h2 class="mb-5 fw-semibold">Cool Things I've Worked On</h2>
+
+  <div class="row gy-5">
+      <div class="col-12">
+      <a href="/project-2" class="text-decoration-none text-dark d-flex flex-column flex-md-row gap-4 align-items-start">
+        <img src="/assets/images/dl_paper.png" alt="Project 2" class="img-fluid rounded" style="max-width: 300px;">
+        <div>
+          <h3 class="h4 fw-bold mb-2">Hey Siri, am I Drunk?</h3>
+          <p class="mb-0 text-muted">Using accelerometers and neural nets to detect intoxication. 😵‍💫</p>
+        </div>
+      </a>
+    </div>
+    
+    <div class="col-12">
+      <a href="/projects/bug_hunt.html" class="text-decoration-none text-dark d-flex flex-column flex-md-row gap-4 align-items-start">
+        <img src="/assets/images/bug_hunt_dance.png" alt="Project 1" class="img-fluid rounded" style="max-width: 300px;">
+        <div>
+          <h3 class="h4 fw-bold mb-2">Bug Hunt!</h3>
+          <p class="mb-0 text-muted">Bug scavenger game in Unity. 🐛</p>
+        </div>
+      </a>
+    </div>
+
+
+
+    <!-- Add more case studies below -->
+     <!-- Wallscapes, MiniJava compiler, xk, 333gle -->
+  </div>
+</section>
